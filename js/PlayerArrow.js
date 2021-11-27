@@ -11,10 +11,17 @@ class PlayerArrow {
     this.archerAngle = archerAngle;
     this.velocity = 0;
     World.add(world, this.body);
+    
   }
 
   display() {
-  
-   
+  var pos = this.body.position;
+  var angle = this.body.angle
+
+
+  push()
+  translate(pos.x,pox.y)
+  rotate(angle)
+  imageMode(CENTER)
+  image(this.image,0,0,this.width,this.height)
   }
-}
